@@ -6,7 +6,7 @@
 #    By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 09:14:53 by jhouyet           #+#    #+#              #
-#    Updated: 2023/11/20 11:53:52 by jhouyet          ###   ########.fr        #
+#    Updated: 2023/11/20 12:12:24 by jhouyet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,11 +64,13 @@ SRCS		=	ft_isalpha.c \
 				ft_printf/ft_printf_unsigned_number.c \
 				ft_printf/ft_printf_hexa.c \
 				ft_printf/ft_puthexa_fd.c \
-				ft_printf/ft_libft.c
+				ft_printf/ft_libft.c \
+				get_next_line/get_next_line.c \
+				get_next_line/get_next_line_utils.c
 
 OBJS	= ${SRCS:.c=.o}
 
-HEADERS		= libft.h ft_printf/ft_printf.h
+HEADERS		= libft.h ft_printf/ft_printf.h get_next_line/get_next_line.h
 
 CC		= gcc
 
