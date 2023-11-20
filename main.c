@@ -1,7 +1,0 @@
-#include "libft.h"
-
-int	main(void)
-{
-	ft_printf("Salut %s", "Julien");
-	return (0);
-}
