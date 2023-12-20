@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 09:55:18 by jhouyet           #+#    #+#             */
-/*   Updated: 2023/12/20 10:30:03 by jhouyet          ###   ########.fr       */
+/*   Updated: 2023/12/20 11:47:35 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,7 @@ int		ft_printf_unsigned_number(va_list *arg);
 int		ft_printf_hexa(char var, va_list *arg);
 
 void	ft_puthexa_fd(unsigned long nb, char var, int fd);
+
+char	*get_next_line(int fd);
 
 #endif
