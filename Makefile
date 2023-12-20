@@ -6,13 +6,14 @@
 #    By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 09:14:53 by jhouyet           #+#    #+#              #
-#    Updated: 2023/12/20 11:22:11 by jhouyet          ###   ########.fr        #
+#    Updated: 2023/12/20 12:25:16 by jhouyet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 RED=\033[0;31m
 GREEN=\033[0;32m
 YELLOW=\033[1;33m
+BLUE=\033[0;34m
 NC=\033[0m
 
 NAME = libft.a
@@ -38,22 +39,22 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 all: $(LIBNAME)
 
 $(LIBNAME): $(OBJ)
-	@echo "$(GREEN)Creating library $(LIBNAME)...$(NC)"
+	@echo "$(GREEN)Creating Libft library $(LIBNAME)...$(NC)"
 	@mkdir -p $(LIB_DIR)
 	@ar rc $(LIBNAME) $(OBJ)
-	@echo "$(GREEN)Library created!$(NC)"
+	@echo "$(GREEN)Library Libft created!$(NC)"
 
 clean:
-	@echo "$(RED)Cleaning objects...$(NC)"
+	@echo "$(RED)Cleaning objects Libft...$(NC)"
 	@$(RM) $(OBJ)
 	@rm -rf $(OBJ_DIR)
-	@echo "$(GREEN)Cleaned!$(NC)"
+	@echo "$(GREEN)Cleaned objects Libft!$(NC)"
 
 fclean: clean
-	@echo "$(RED)Fully cleaning library...$(NC)"
+	@echo "$(RED)Fully cleaning Libft...$(NC)"
 	@$(RM) $(LIBNAME)
 	@rm -rf $(LIB_DIR)
-	@echo "$(GREEN)Fully cleaned!$(NC)"
+	@echo "$(BLUE)Fully cleaned Libft!$(NC)"
 
 re: fclean all
 
