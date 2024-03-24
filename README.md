@@ -56,8 +56,3 @@ To delete the library and all object files
 ```shell
 $ make fclean
 ```
-
-##  :lock: License
-
-GNU GENERAL PUBLIC LICENSE
-Version 3.
